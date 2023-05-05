@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <nav>Student Portal</nav>
+    <div class="main-container">
+        <div class="searchContainer">
+            <input type="Search" placeholder="Search" id="search">
+            <button class="bton" onclick="filterData()">Search</button>
+        </div>
+        <div class="sorting">
+            <button class="btn extra" onclick="sortAToZ()">
+                <span>Sort A</span>
+                <span class="material-icons">arrow_forward</span>
+                <span>Z</span>
+            </button>
+            <button class="btn extra" onclick="sortZToA()">
+                <span>Sort Z</span>
+                <span class="material-icons">arrow_forward</span>
+                <span>A</span>
+            </button>
+            <button class="btn" onclick="sortByMarks()">Sort By Marks</button>
+            <button class="btn" onclick="sortByPassing()">Sort By Passing</button>
+            <button class="btn" onclick="sortByClass()">Sort By Class</button>
+            <button class="btn" onclick="sortByGender()">Sort By Gender</button>
+        </div>
+        <div class="output">
+            <table id="table1" class="table">
+                <thead>
+                    <tr>
+                        <th class="id">ID</th>
+                        <th class="name">Name</th>
+                        <th class="gender">Gender</th>
+                        <th class="cls">Class</th>
+                        <th class="marks">Marks</th>
+                        <th class="passing">Passing</th>
+                        <th class="mail" >Email</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                 
+                </tbody>
+            </table> 
+            <div class="space"></div>
+           
+            <table id="table2" class="table">
+                <thead>
+                    <tr>
+                        <th class="id">ID</th>
+                        <th class="name">Name</th>
+                        <th class="gender">Gender</th>
+                        <th class="cls">Class</th>
+                        <th class="marks">Marks</th>
+                        <th class="passing">Passing</th>
+                        <th class="mail" >Email</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody1">
+                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+          
+    
+    <script src="./index.js"></script>  
+</body>
+</html>
